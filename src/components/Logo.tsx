@@ -1,14 +1,11 @@
-const logoImg = "/images/logo.png";
+import { Zap } from "lucide-react";
 
 export default function Logo({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
-      <img 
-        src={logoImg} 
-        alt="Rosa's Kickboxing Academy Logo" 
-        onError={(e) => console.error("Error loading logo image:", e.currentTarget.src)}
-        className="h-10 md:h-14 w-auto object-contain brightness-110"
-      />
+      <div className="bg-brand p-1.5 rounded-lg shadow-lg shadow-brand/20">
+        <Zap className="w-6 h-6 md:w-8 md:h-8 text-white fill-white" />
+      </div>
       
       <div className="flex flex-col">
         <h1 className="font-display font-black text-lg md:text-xl tracking-tight uppercase leading-tight italic">
