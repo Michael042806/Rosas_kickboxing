@@ -2,12 +2,12 @@ import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { X, Maximize2 } from "lucide-react";
 
-import img1 from "@/src/assets/gallery/1.png";
-import img2 from "@/src/assets/gallery/2.png";
-import img3 from "@/src/assets/gallery/3.png";
-import img4 from "@/src/assets/gallery/4.png";
-import img5 from "@/src/assets/gallery/5.png";
-import img6 from "@/src/assets/gallery/6.png";
+import img1 from "../assets/gallery/1.png";
+import img2 from "../assets/gallery/2.png";
+import img3 from "../assets/gallery/3.png";
+import img4 from "../assets/gallery/4.png";
+import img5 from "../assets/gallery/5.png";
+import img6 from "../assets/gallery/6.png";
 
 const images = [
   {
