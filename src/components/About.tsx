@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-const coachImg = "https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=800&auto=format&fit=crop";
+const coachImg = "https://lh3.googleusercontent.com/d/1I-9m9Q2A9Ql7h6iKSi3FNITf-az6_ekr";
 
 export default function About() {
   return (
@@ -37,7 +37,12 @@ export default function About() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 src={coachImg} 
                 alt="Coach Rosa" 
-                onError={(e) => console.error("Error loading coach image:", e.currentTarget.src)}
+                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  console.error("Error loading coach image:", e.currentTarget.src);
+                  // Use a high-quality fallback if Google Drive fails or is blocked
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=800&auto=format&fit=crop";
+                }}
                 className="w-full brightness-110 contrast-100"
               />
               <motion.div 

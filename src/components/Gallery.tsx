@@ -2,7 +2,8 @@ import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { X, Maximize2 } from "lucide-react";
 
-const img1 = "https://drive.google.com/uc?id=1I-9m9Q2A9Ql7h6iKSi3FNITf-az6_ekr";
+// Using a high-quality Unsplash image as a reliable fallback for the gallery
+const img1 = "https://images.unsplash.com/photo-1599058917232-d750c1859d7c?q=80&w=1200";
 const img2 = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop";
 const img3 = "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop";
 const img4 = "https://images.unsplash.com/photo-1590556409324-aa1d726e5c3c?q=80&w=800&auto=format&fit=crop";
@@ -80,7 +81,12 @@ export default function Gallery() {
                 transition={{ duration: 0.6, ease: [0.33, 1, 0.68, 1] }}
                 src={image.url}
                 alt={image.title}
-                onError={(e) => console.error("Error loading gallery image:", e.currentTarget.src)}
+                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  console.error("Error loading gallery image:", e.currentTarget.src);
+                  // Fallback to a placeholder if the specific image fails
+                  e.currentTarget.src = `https://picsum.photos/seed/${index}/800/1000`;
+                }}
                 className="w-full h-full object-cover"
               />
               <motion.div 

@@ -15,7 +15,11 @@ export default function Hero() {
           transition={{ duration: 2, ease: "easeOut" }}
           src={heroImg} 
           alt="Rosa's Kickboxing Academy Gym" 
-          onError={(e) => console.error("Error loading hero image:", e.currentTarget.src)}
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            console.error("Error loading hero image:", e.currentTarget.src);
+            e.currentTarget.src = "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=1200&auto=format&fit=crop";
+          }}
           className="w-full h-full object-cover brightness-[1.05] contrast-[1.05] scale-x-[-1]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent" />
