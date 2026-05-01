@@ -87,7 +87,7 @@ export default function Gallery() {
                   // Fallback to a placeholder if the specific image fails
                   e.currentTarget.src = `https://picsum.photos/seed/${index}/800/1000`;
                 }}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
               />
               <motion.div 
                 variants={{
