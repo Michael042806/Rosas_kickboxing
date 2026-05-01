@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { X, Maximize2 } from "lucide-react";
 
-const img1 = "https://images.unsplash.com/photo-1552072805-2a9039d00e57?q=80&w=800&auto=format&fit=crop";
+const img1 = "https://drive.google.com/uc?id=1I-9m9Q2A9Ql7h6iKSi3FNITf-az6_ekr";
 const img2 = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop";
 const img3 = "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop";
 const img4 = "https://images.unsplash.com/photo-1590556409324-aa1d726e5c3c?q=80&w=800&auto=format&fit=crop";
