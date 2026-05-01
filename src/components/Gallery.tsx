@@ -3,7 +3,7 @@ import { useState } from "react";
 import { X, Maximize2 } from "lucide-react";
 
 // Using a high-quality Unsplash image as a reliable fallback for the gallery
-const img1 = "https://images.unsplash.com/photo-1599058917232-d750c1859d7c?q=80&w=1200";
+const img1 = "https://drive.google.com/file/d/1I-9m9Q2A9Ql7h6iKSi3FNITf-az6_ekr/view?usp=drive_link";
 const img2 = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop";
 const img3 = "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop";
 const img4 = "https://images.unsplash.com/photo-1590556409324-aa1d726e5c3c?q=80&w=800&auto=format&fit=crop";
