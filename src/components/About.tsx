@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import coachImg from "../assets/coach.png";
+import coachImg from "@/src/assets/coach.png";
 
 export default function About() {
   return (
