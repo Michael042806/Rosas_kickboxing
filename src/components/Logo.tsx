@@ -1,4 +1,4 @@
-import logoImg from "../assets/logo.png";
+const logoImg = "https://images.unsplash.com/photo-1517861972580-0a2569527ecb?q=80&w=200&auto=format&fit=crop";
 
 export default function Logo({ className = "" }: { className?: string }) {
   return (

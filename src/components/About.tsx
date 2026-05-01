@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import coachImg from "../assets/coach.png";
+
+const coachImg = "https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=800&auto=format&fit=crop";
 
 export default function About() {
   return (

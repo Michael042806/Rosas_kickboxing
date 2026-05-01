@@ -1,7 +1,8 @@
 import { motion } from "motion/react";
 import { Star } from "lucide-react";
 import { cn } from "../lib/utils.ts";
-import heroImg from "../assets/hero.png";
+
+const heroImg = "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=1200&auto=format&fit=crop";
 
 export default function Hero() {
   return (
