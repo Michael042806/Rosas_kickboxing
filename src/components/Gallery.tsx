@@ -2,13 +2,13 @@ import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { X, Maximize2 } from "lucide-react";
 
-// Using a high-quality Unsplash image as a reliable fallback for the gallery
-const img1 = "https://drive.google.com/file/d/1I-9m9Q2A9Ql7h6iKSi3FNITf-az6_ekr/view?usp=drive_link";
-const img2 = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop";
-const img3 = "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop";
-const img4 = "https://images.unsplash.com/photo-1590556409324-aa1d726e5c3c?q=80&w=800&auto=format&fit=crop";
-const img5 = "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop";
-const img6 = "https://images.unsplash.com/photo-1554941426-e9604e34bc94?q=80&w=800&auto=format&fit=crop";
+// Using direct access links for Google Drive images
+const img1 = "https://lh3.googleusercontent.com/d/10vm5z-MmklAs9jCWKzFb_OaHScBMVm9W";
+const img2 = "https://lh3.googleusercontent.com/d/1_Xe38y2N1VXXlAaUyWMsvhxKiOj9lb0u";
+const img3 = "https://lh3.googleusercontent.com/d/12qEKjvXrgcAqBYeW1OaC0QmDJiqZW_QY";
+const img4 = "https://lh3.googleusercontent.com/d/1LEdXY2qimjTNAPnpexelL8hLG0pV3feT";
+const img5 = "https://lh3.googleusercontent.com/d/17DQhbDSW60ZakLIGySUR05l25Es2A64o";
+const img6 = "https://lh3.googleusercontent.com/d/1rMgIDtKVfiKVVkZ9muBJDM3iGllQUdyE";
 
 const images = [
   {
